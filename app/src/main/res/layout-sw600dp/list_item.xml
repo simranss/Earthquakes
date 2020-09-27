@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="8dp"
+    android:layout_gravity="center_vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/list_item">
+
+        <TextView
+            android:id="@+id/list_item_mag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="20dp"
+            android:background="@drawable/mag_background"
+            android:padding="24dp"
+            android:textColor="@android:color/black"
+            android:textSize="28sp"
+            tools:text="7.5" />
+
+        <RelativeLayout
+            android:id="@+id/list_item_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toStartOf="@+id/list_item_time"
+            android:layout_toEndOf="@id/list_item_mag">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/location_offset"
+                android:textSize="24sp"
+                tools:text="86km E of"
+                android:textColor="#B4BAC0"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/location_primary"
+                android:layout_below="@id/location_offset"
+                android:layout_alignParentStart="true"
+                android:textSize="28sp"
+                android:textColor="#2B3D4D"
+                tools:text="Santa Maria Xadani, Mexico" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/list_item_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="20dp"
+            android:textSize="22sp"
+            tools:text="24 Jan 2016\n04:00 PM" />
+
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@id/list_item"
+        android:layout_marginTop="8dp"
+        android:background="?android:attr/listDivider" />
+
+</RelativeLayout>

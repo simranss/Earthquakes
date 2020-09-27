@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">भूकंप</string>
+    <string name="retry_btn">पुन: प्रयास करें</string>
+    <string name="no_internet">इंटरनेट नहीं है</string>
+    <string name="no_data">कोई डेटा नहीं मिला</string>
+    <string name="loading">लोड हो रहा है.......</string>
+    <string name="no_results">कोई परिणाम नहीं मिला</string>
+</resources>
